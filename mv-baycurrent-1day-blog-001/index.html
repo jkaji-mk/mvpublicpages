@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>ベイカレントが中途採用強化中｜1日で面接が完結する「休日1day選考会」</title>
+<meta name="description" content="ベイカレント・コンサルティングが中途採用を強化。土日・祝日に開催され、1日のうちに面接が完結する「休日1day選考会」が毎月1〜2回。コンサル業界専門の転職エージェントMyVisionから応募できます。">
+
+<!-- ============================================================
+     TODO（公開前に必ず対応）
+     1) CTAの遷移先：確定済み。
+        https://form.my-vision.co.jp/forms/d0aa9cac-b2de-480f-a8fc-07f96641a156
+        クエリは attitude 1本のみ:
+          ?attitude=<日本語の意向>_bc01_v08a_c<通し番号>_<ブロック>
+        先頭の日本語がエージェントの読む「ユーザーが何をしたがっているか」。
+        以降のアンダーバー区切りが集計用のキー（_ で split して使う）。
+        UTM / gclid 等は body 末尾のスクリプトが LP の URL から引き継ぐ。
+     2) 数値：ベイカレントの売上高/従業員数/平均年収は 2026年2月期 有価証券報告書の値に確定済み。
+        「No.1」表記はフッター最下部の根拠注記（※）とセットで運用すること。
+     3) favicon：images/favicon.png（512×512）と images/apple-touch-icon.png（180×180）を配置する。
+        og:image：必要ならドメイン非依存の固定絶対URL（GCS等）を用意して追加。
+     4) 画像：images/ 配下に6点を配置。現状は未配置のため点線のプレースホルダ枠が出る。
+          logo-myvision-color.webp    3:1   ヘッダー
+          logo-myvision-white.webp    3:1   最終CTA・フッター
+          logo-baycurrent-color.webp 11:3   対象企業カード
+          logo-baycurrent-white.webp 11:3   ベイカレント訴求・最終CTA
+          eyecatch-baycurrent-1day.webp 16:9 記事アイキャッチ（1200×675）
+          firm-logos.webp             15:8  コラムの実施企業ロゴ 3列×4段
+          favicon.png                 1:1   512×512（ブラウザタブ）
+          apple-touch-icon.png        1:1   180×180（iOSホーム画面）
+     ============================================================ -->
+
+<!-- OGP（URL非依存のもののみ。canonical / og:url / og:image は共通与件により入れない） -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="ベイカレントが中途採用強化中｜1日で面接が完結する「休日1day選考会」">
+<meta property="og:description" content="ベイカレント・コンサルティングが中途採用を強化。土日・祝日に開催され、1日のうちに面接が完結する「休日1day選考会」が毎月1〜2回。コンサル業界専門の転職エージェントMyVisionから応募できます。">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="images/favicon.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&amp;family=Noto+Serif+JP:wght@700&amp;display=swap" rel="stylesheet">
+
+<!-- dataLayer（GTMスニペットより前。attitude計測設計 v2 の分母分離用） -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  dataLayer.push({ lp_id: 'bc01', lp_version: 'v08a', lp_path: 'mv-baycurrent-1day-blog-001' });
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PQSHD4N');</script>
+<!-- End Google Tag Manager -->
+
+<style>
+/* ========== tokens ========== */
+:root{
+  --brand:#15509C;
+  --brand-d:#0E3A73;
+  --brand-dd:#0A2B57;
+  --brand-t:#EEF3FA;
+  --brand-t2:#DCE7F5;
+  --brand-line:#C7D8EE;
+
+  --ink:#1B2430;
+  --ink2:#4C5765;
+  --ink3:#828C9B;
+
+  --bg:#FFFFFF;
+  --bg2:#F5F7FA;
+
+  --cta:#E8542F;
+  --cta2:#F5893A;
+  --cta-sh:rgba(232,84,47,.32);
+
+  --w:680px;
+  --pad:20px;
+  --r:14px;
+
+  --sans:"Noto Sans JP",-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;
+  --serif:"Noto Serif JP","Hiragino Mincho ProN","Yu Mincho",serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:66px}
+section[id],div[id]{scroll-margin-top:66px}
+body{
+  margin:0;font-family:var(--sans);color:var(--ink);background:var(--bg);
+  font-size:16px;line-height:1.95;letter-spacing:.02em;
+  font-feature-settings:"palt" 1;
+  -webkit-font-smoothing:antialiased;
+  padding-bottom:84px; /* sticky bar */
+}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--brand);text-underline-offset:3px}
+
+/* ========== layout ========== */
+.wrap{width:100%;max-width:var(--w);margin-inline:auto;padding-inline:var(--pad)}
+.sec{padding:44px 0}
+.sec--tint{background:var(--bg2)}
+.sec--navy{background:linear-gradient(165deg,var(--brand-d),var(--brand-dd));color:#fff}
+.sec--navy a{color:#cfe0f5}
+
+/* ========== header ========== */
+.hd{
+  position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);
+  backdrop-filter:saturate(160%) blur(8px);
+  border-bottom:1px solid #E7EBF1;
+}
+.hd__in{display:flex;align-items:center;gap:10px;height:54px;max-width:var(--w);margin-inline:auto;padding-inline:var(--pad)}
+.hd__in .hd__logo{width:116px;flex:0 0 116px}
+.hd__tag{margin:0 0 0 auto;text-align:right;font-size:12px;font-weight:700;line-height:1.45;color:var(--ink);letter-spacing:.01em;white-space:nowrap}
+
+/* ========== article head ========== */
+/* 注意: .wrap の padding-inline を潰さないよう padding-block で指定すること */
+.ah{padding-block:26px 6px}
+.crumb{font-size:11.5px;color:var(--ink3);margin:0 0 14px}
+.crumb span{margin:0 6px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px;padding:0;list-style:none}
+.tags li{font-size:11px;font-weight:700;letter-spacing:.03em;color:var(--brand);background:var(--brand-t);border:1px solid var(--brand-t2);border-radius:999px;padding:3px 10px;line-height:1.6}
+h1{
+  font-family:var(--serif);font-weight:700;
+  font-size:clamp(21px,5.9vw,26px);line-height:1.55;letter-spacing:.01em;
+  margin:0 0 16px;
+}
+h1 .ln{display:block}
+h1 .em{
+  background:linear-gradient(transparent 62%, #FFE0B8 62%);
+  padding-bottom:1px;
+}
+.ah__meta{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:11.5px;color:var(--ink3);border-top:1px solid #EDF0F4;border-bottom:1px solid #EDF0F4;padding:10px 0;margin:0 0 22px}
+.lead{font-size:15.5px;line-height:2;color:var(--ink2);margin:0 0 8px}
+.lead strong{color:var(--ink);font-weight:700}
+
+/* ========== headings ========== */
+h2{
+  font-family:var(--serif);font-weight:700;
+  font-size:clamp(19px,5.3vw,21px);line-height:1.6;letter-spacing:.01em;
+  margin:0 0 20px;padding:0 0 12px;position:relative;
+}
+h2::after{content:"";position:absolute;left:0;bottom:0;width:44px;height:3px;border-radius:2px;background:var(--brand)}
+.sec--navy h2::after{background:#7FB0EA}
+h2 .num{display:block;font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:.14em;color:var(--brand);margin-bottom:6px}
+.sec--navy h2 .num{color:#8FBBF0}
+h3{font-size:17px;font-weight:700;line-height:1.65;margin:30px 0 10px;color:var(--ink)}
+.sec--navy h3{color:#fff}
+p{margin:0 0 18px}
+.note{font-size:11.5px;line-height:1.85;color:var(--ink3);margin:10px 0 0}
+.sec--navy .note{color:#A9C4E6}
+.numgrid{list-style:none;margin:0 0 8px;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.numgrid__i{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:12px 8px;text-align:center}
+.numgrid__l{display:block;font-size:10.5px;font-weight:700;color:#A9C4E6;line-height:1.4;margin-bottom:10px}
+.numgrid__v{display:inline-block;font-family:var(--serif);font-size:19px;font-weight:700;color:#fff;line-height:1.2}
+.numgrid__v small{font-size:11px;font-family:var(--sans);margin-left:1px}
+
+/* ========== TOC ========== */
+.toc{border:1px solid #E3E8EF;border-radius:var(--r);background:#fff;padding:18px 18px 8px}
+.toc__t{font-size:13px;font-weight:700;letter-spacing:.06em;color:var(--ink2);margin:0 0 10px;display:flex;align-items:center;gap:8px}
+.toc__t::before{content:"";width:14px;height:2px;background:var(--brand)}
+.toc ol{margin:0;padding:0 0 0 1.3em;list-style:decimal}
+.toc li{margin:0 0 10px;font-size:14px;line-height:1.7}
+.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+.toc a:hover{border-bottom-color:var(--brand-line)}
+.toc li::marker{color:var(--brand);font-weight:700;font-size:12px}
+
+/* ========== CTA ========== */
+.ctabox{
+  border-radius:16px;background:linear-gradient(170deg,#fff,#FAFCFF);
+  border:1px solid var(--brand-line);
+  box-shadow:0 6px 24px rgba(21,80,156,.09);
+  padding:20px 18px;margin:28px 0;
+}
+.ctabox--onnavy{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.22);box-shadow:none}
+.ctabox__k{font-size:13.5px;font-weight:900;letter-spacing:.02em;line-height:1.6;color:var(--cta);margin:0 0 8px}
+.ctabox__t{font-size:16px;font-weight:700;line-height:1.65;margin:0 0 4px}
+.ctabox--onnavy .ctabox__t{color:#fff}
+.ctabox__s{font-size:12.5px;line-height:1.8;color:var(--ink3);margin:0 0 14px}
+.ctabox--onnavy .ctabox__s{color:#B9D0EC}
+
+.btn{
+  position:relative;overflow:hidden;
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  width:100%;min-height:62px;padding:10px 44px 10px 20px;
+  border-radius:999px;text-decoration:none;
+  font-size:16.5px;font-weight:900;letter-spacing:.02em;line-height:1.4;text-align:center;
+  color:#fff;background:linear-gradient(135deg,var(--cta),var(--cta2));
+  box-shadow:0 6px 16px var(--cta-sh), inset 0 1px 0 rgba(255,255,255,.34);
+  transition:transform .18s ease, box-shadow .18s ease;
+}
+.btn::after{
+  content:"";position:absolute;right:20px;top:50%;
+  width:9px;height:9px;border-top:2.4px solid #fff;border-right:2.4px solid #fff;
+  transform:translateY(-50%) rotate(45deg);
+  animation:nudge 2.2s ease-in-out infinite;
+}
+.btn::before{
+  content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;
+  background:linear-gradient(100deg,transparent,rgba(255,255,255,.42),transparent);
+  transform:skewX(-18deg);animation:sweep 4.5s ease-in-out infinite;
+}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 22px var(--cta-sh)}
+.btn--ghost{
+  color:var(--brand);background:#fff;border:2px solid var(--brand-line);
+  box-shadow:0 3px 10px rgba(21,80,156,.08);min-height:56px;font-size:15px;font-weight:700;
+}
+.btn--ghost::after{border-color:var(--brand)}
+.btn--ghost::before{display:none}
+.btn{flex-wrap:wrap}
+.sec--navy .btn{color:#fff}
+.sec--navy .btn--ghost{color:var(--brand);border-color:#fff}
+.btn-note{font-size:11px;color:var(--ink3);text-align:center;margin:10px 0 0}
+.ctabox--onnavy .btn-note{color:#A9C4E6}
+
+/* CTAバンド（セクション間） */
+/* CTAバンドは濃紺セクションより明るく終わらせる（青が連続したときに境目が消えないように） */
+.band{background:linear-gradient(165deg,#1E6AC8,var(--brand));padding:30px 0}
+.band + .sec--navy,.sec--navy + .band{box-shadow:inset 0 1px 0 rgba(255,255,255,.24)}
+.band__t{color:#fff;font-size:16px;font-weight:700;line-height:1.7;text-align:center;margin:0 0 4px}
+.band__s{color:#BFD5EF;font-size:12px;text-align:center;margin:0 0 16px}
+
+/* ========== cards ========== */
+.cards{display:grid;gap:12px;margin:0 0 8px;padding:0;list-style:none}
+.card{
+  background:#fff;border:1px solid #E3E8EF;border-radius:var(--r);
+  padding:18px 18px;
+}
+.sec--navy .card{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.18)}
+.card__h{display:flex;align-items:flex-start;gap:10px;margin:0 0 6px}
+.card__n{
+  flex:0 0 auto;width:26px;height:26px;border-radius:8px;
+  background:var(--brand);color:#fff;font-size:12px;font-weight:900;
+  display:flex;align-items:center;justify-content:center;margin-top:3px;
+}
+.sec--navy .card__n{background:#5F97DC}
+.card__t{font-size:15.5px;font-weight:700;line-height:1.65;margin:0}
+.sec--navy .card__t{color:#fff}
+.card__b{font-size:13.5px;line-height:1.9;color:var(--ink2);margin:0}
+.sec--navy .card__b{color:#C6D9F0}
+
+/* 定義リスト風の要点 */
+/* 要件表：右列は折り返さず、幅が足りなければ横スクロール（改行は <br> で明示する） */
+.factswrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid #E3E8EF;border-radius:var(--r);margin:0 0 18px}
+.facts{display:grid;gap:1px;background:#E3E8EF;width:max-content;min-width:100%}
+.facts__row{display:grid;grid-template-columns:92px minmax(0,1fr);background:#fff}
+.facts__k{background:var(--brand-t);color:var(--brand-d);font-size:12px;font-weight:700;line-height:1.6;padding:12px 10px;display:flex;align-items:center}
+.facts__v{font-size:13.5px;line-height:1.85;padding:12px 14px;white-space:nowrap}
+
+/* 比較表 */
+.tblwrap{margin:0 0 8px;border-radius:var(--r);border:1px solid #E3E8EF;overflow:hidden}
+table{border-collapse:collapse;width:100%;table-layout:fixed;font-size:12px;background:#fff}
+th,td{padding:10px 8px;text-align:left;line-height:1.7;border-bottom:1px solid #EDF0F4;vertical-align:top;word-break:auto-phrase;overflow-wrap:anywhere}
+thead th{background:var(--brand-t);color:var(--brand-d);font-size:11.5px;font-weight:700;text-align:center;line-height:1.5}
+thead th:last-child{background:var(--brand);color:#fff}
+tbody th{font-weight:700;color:var(--ink2);font-size:11.5px;background:#FBFCFE}
+col.c1{width:22%}col.c2{width:39%}col.c3{width:39%}
+td:last-child{font-weight:700;color:var(--brand-d);background:#F7FAFE}
+tr:last-child th,tr:last-child td{border-bottom:0}
+
+/* 開催実績 */
+.rec{display:grid;gap:10px;margin:0 0 14px}
+.rec__row{display:grid;grid-template-columns:78px 1fr;gap:10px;align-items:start;border-bottom:1px dashed #DDE3EB;padding-bottom:10px}
+.rec__m{font-size:12px;font-weight:700;color:var(--brand-d);line-height:1.9;letter-spacing:.02em}
+.rec__d{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-size:12px;font-weight:700;color:var(--ink2);background:#fff;border:1px solid var(--brand-line);border-radius:999px;padding:2px 10px;line-height:1.7;white-space:nowrap}
+.chip--multi{background:var(--brand-t);color:var(--brand-d)}
+.recsum{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:0 0 20px}
+.recsum__i{background:#fff;border:1px solid var(--brand-line);border-radius:12px;padding:12px 6px;text-align:center}
+.recsum__n{font-family:var(--serif);font-size:24px;font-weight:700;color:var(--brand);line-height:1.2;display:block}
+.recsum__n small{font-size:12px;font-family:var(--sans);margin-left:2px}
+.recsum__l{font-size:10.5px;color:var(--ink3);line-height:1.5;display:block;margin-top:4px}
+
+/* ステップ */
+.steps{list-style:none;margin:0;padding:0;position:relative}
+.steps::before{content:"";position:absolute;left:17px;top:14px;bottom:40px;width:2px;background:linear-gradient(var(--brand-t2),var(--brand-line))}
+.step{position:relative;padding:0 0 22px 50px}
+.step__n{
+  position:absolute;left:0;top:0;width:36px;height:36px;border-radius:50%;
+  background:#fff;border:2px solid var(--brand);color:var(--brand);
+  font-size:14px;font-weight:900;display:flex;align-items:center;justify-content:center;
+}
+.step__t{font-size:15.5px;font-weight:700;line-height:1.6;margin:5px 0 4px}
+.step__b{font-size:13.5px;line-height:1.9;color:var(--ink2);margin:0}
+.step__tag{display:inline-block;font-size:10.5px;font-weight:700;color:var(--brand);background:var(--brand-t);border-radius:6px;padding:1px 8px;margin-left:6px;vertical-align:2px}
+.step--last{padding-bottom:0}
+
+/* FAQ */
+.faq{border:1px solid #E3E8EF;border-radius:var(--r);overflow:hidden;background:#fff}
+details{border-bottom:1px solid #EDF0F4}
+details:last-child{border-bottom:0}
+summary{
+  list-style:none;cursor:pointer;padding:15px 44px 15px 44px;position:relative;
+  font-size:14.5px;font-weight:700;line-height:1.7;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{
+  content:"Q";position:absolute;left:16px;top:15px;
+  font-size:13px;font-weight:900;color:var(--brand);
+}
+summary::after{
+  content:"";position:absolute;right:20px;top:23px;width:8px;height:8px;
+  border-right:2px solid var(--ink3);border-bottom:2px solid var(--ink3);
+  transform:rotate(45deg);transition:transform .2s ease;
+}
+details[open] summary::after{transform:rotate(-135deg)}
+.faq__a{padding:0 18px 16px 44px;font-size:13.5px;line-height:1.95;color:var(--ink2);position:relative}
+.faq__a::before{content:"A";position:absolute;left:16px;top:0;font-size:13px;font-weight:900;color:var(--cta)}
+
+/* ロゴ プレースホルダ */
+.ph{display:block;width:100%;text-decoration:none}
+.ph i{display:none}
+.ph.is-missing img{display:none}
+.ph.is-missing i{
+  display:flex;align-items:center;justify-content:center;text-align:center;
+  width:100%;border:1.5px dashed var(--brand-line);border-radius:8px;
+  color:var(--ink3);font-size:10.5px;font-style:normal;letter-spacing:.02em;
+  background:repeating-linear-gradient(45deg,#FBFCFE,#FBFCFE 8px,#F4F7FB 8px,#F4F7FB 16px);
+  line-height:1.5;padding:4px;
+}
+.sec--navy .ph.is-missing i,.ftr .ph.is-missing i{
+  border-color:rgba(255,255,255,.34);color:rgba(255,255,255,.72);
+  background:repeating-linear-gradient(45deg,rgba(255,255,255,.05),rgba(255,255,255,.05) 8px,rgba(255,255,255,.1) 8px,rgba(255,255,255,.1) 16px);
+}
+.ph--mv img,.ph--mv i{aspect-ratio:3/1}
+.ph--bc img,.ph--bc i{aspect-ratio:11/3}
+.ph--eye i{aspect-ratio:16/9}
+.ph--firms i{aspect-ratio:15/8}
+.ph--mv img,.ph--bc img{width:100%;object-fit:contain}
+/* アイキャッチ／企業ロゴは元画像の縦横比のまま表示（比率を決め打ちしない） */
+.ph--eye img,.ph--firms img{width:100%;height:auto}
+
+.firmcard{
+  display:grid;grid-template-columns:132px 1fr;gap:14px;align-items:center;
+  background:#fff;border:1px solid var(--brand-line);border-radius:var(--r);
+  padding:16px;margin:0 0 20px;
+}
+.firmcard__logo{width:100%}
+.firmcard__b{font-size:13.5px;font-weight:700;line-height:1.75;margin:0;color:var(--ink)}
+.firmcard__k{display:block;font-size:10.5px;font-weight:700;letter-spacing:.1em;color:var(--brand);margin-bottom:2px}
+
+.logopair{display:grid;grid-template-columns:1.18fr auto 0.82fr;gap:14px;align-items:center;margin:0 0 22px}
+.logopair__x{font-size:13px;font-weight:700;color:rgba(255,255,255,.6)}
+.baylogo{width:200px;margin:0 0 18px}
+
+/* sticky bar */
+.sticky{
+  position:fixed;left:0;right:0;bottom:0;z-index:60;
+  background:rgba(255,255,255,.96);backdrop-filter:blur(8px);
+  border-top:1px solid #E3E8EF;box-shadow:0 -4px 18px rgba(16,38,68,.10);
+  padding:9px var(--pad) calc(9px + env(safe-area-inset-bottom));
+  transform:translateY(120%);transition:transform .28s ease;
+}
+.sticky.is-on{transform:translateY(0)}
+.sticky__in{max-width:var(--w);margin-inline:auto}
+.sticky .btn{min-height:54px;font-size:15.5px}
+.sticky__note{font-size:10px;color:var(--ink3);text-align:center;margin:5px 0 0;line-height:1.4}
+
+/* footer */
+.ftr{background:var(--brand-dd);color:#B9CBE2;padding:34px 0 30px;font-size:12px;line-height:1.9}
+.ftr .wrap{max-width:var(--w)}
+.ftr__logo{width:140px;margin:0 0 14px}
+.ftr__lead{font-size:12px;color:#9FB6D2;margin:0 0 18px}
+.ftr__links{display:flex;flex-wrap:wrap;gap:8px 18px;margin:0 0 18px;padding:0;list-style:none}
+.ftr__links a{color:#D6E3F2;text-decoration:none;font-size:12px}
+.ftr__links a:hover{text-decoration:underline}
+.ftr__notes{border-top:1px solid rgba(255,255,255,.14);padding-top:14px;font-size:10.5px;color:#8FA7C4;line-height:1.8}
+.ftr__cr{margin:14px 0 0;font-size:10.5px;color:#7C93AF}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+.rv.is-in{opacity:1;transform:none}
+
+@keyframes sweep{0%{left:-60%}28%{left:130%}100%{left:130%}}
+@keyframes nudge{0%,100%{transform:translateY(-50%) rotate(45deg) translateX(0)}50%{transform:translateY(-50%) rotate(45deg) translateX(3px)}}
+
+@media (prefers-reduced-motion: reduce){
+  *{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+  .rv{opacity:1;transform:none}
+}
+
+/* ---------- タブレット以上（少数派。記事幅を広げるだけ） ---------- */
+@media (min-width:768px){
+  :root{--w:760px;--pad:32px}
+  body{font-size:16.5px;padding-bottom:0}
+  h1{font-size:34px}
+  h2{font-size:25px}
+  .sec{padding:64px 0}
+  .ah{padding-block:40px 6px}
+  .cards{grid-template-columns:1fr 1fr}
+  .cards--3{grid-template-columns:repeat(3,1fr)}
+  .cards li.card--wide{grid-column:1/-1}
+  .btn{min-height:70px;font-size:18px}
+  .sticky{display:none}
+  .ctabox{padding:26px 26px}
+  .recsum__n{font-size:30px}
+}
+
+/* ========== 記事アイキャッチ（v02a） ========== */
+.eyecatch{margin:0 0 24px}
+.eyecatch__img{display:block;width:100%;border-radius:var(--r);overflow:hidden;background:var(--brand-t)}
+.eyecatch__img img{width:100%;height:auto}
+.eyecatch__cap{margin:10px 0 0;font-size:11px;line-height:1.6;color:var(--ink3)}
+
+/* ========== コラム（v03a） ========== */
+.column{
+  margin:26px 0 0;padding:20px 18px;background:#fff;
+  border:1px solid var(--brand-line);border-radius:var(--r);
+  box-shadow:0 3px 14px rgba(21,80,156,.06);
+}
+.column__t{margin:0 0 10px;font-size:15.5px;font-weight:700;line-height:1.65;color:var(--brand-d)}
+.column__b{margin:0 0 16px;font-size:13.5px;line-height:1.9;color:var(--ink2)}
+.column__img{display:block;width:100%;border-radius:10px;overflow:hidden;background:var(--brand-t)}
+.column__note{margin:8px 0 0;font-size:10.5px;line-height:1.6;color:var(--ink3);text-align:right}
+@media (min-width:768px){
+  .column{padding:28px 26px}
+  .column__t{font-size:17px}
+}
+
+/* ========== 注記マーカー（v03b） ========== */
+.ref{font-size:.6em;font-weight:700;vertical-align:.42em;letter-spacing:0;margin-left:1px;opacity:.8}
+</style>
+<noscript><style>.rv{opacity:1;transform:none}.sticky{display:none}</style></noscript>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQSHD4N" title="gtm" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header class="hd">
+  <div class="hd__in">
+    <a class="ph ph--mv hd__logo" href="https://my-vision.co.jp/" target="_blank" rel="noopener">
+      <img src="images/logo-myvision-color.webp" alt="MyVisionコンサルティング" onerror="this.parentNode.classList.add('is-missing')">
+      <i>MyVisionロゴ<br>カラー 3:1</i>
+    </a>
+    <p class="hd__tag" data-t="header-01">コンサル業界No.1<span class="ref">（※）</span><br>転職エージェント</p>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ 記事ヘッダー ============ -->
+<article>
+<!-- CTA c1 -->
+<!-- ============ 目次 ============ -->
+<!-- ============ 1. なぜ今 ============ -->
+<!-- ============ 2. 1day選考会とは ============ -->
+<!-- CTA c2 -->
+<!-- ============ 3. 開催実績 ============ -->
+<!-- ============ 4. ベイカレント訴求 ============ -->
+<!-- CTA c3 -->
+<!-- ============ 5. 4ステップ ============ -->
+<!-- CTA c4 -->
+<!-- ============ 6. MyVision ============ -->
+<!-- ============ 7. FAQ ============ -->
+<!-- ============ 最終CTA ============ -->
+<div class="wrap ah" data-blk="head" data-blk-name="記事ヘッダー（タイトル・リード）">
+  <p class="crumb" data-t="head-01">未経験からのコンサル転職<span>›</span>選考会情報</p>
+  <ul class="tags">
+    <li data-t="head-02">#ベイカレント</li>
+    <li data-t="head-03">#休日1day選考会</li>
+    <li data-t="head-04">#PR</li>
+  </ul>
+  <h1 data-t="head-05"><span class="ln">ベイカレントが中途採用強化中！</span><span class="ln"><span class="em">1日で面接が完結する「休日1day選考会」</span>も。</span></h1>
+  <div class="ah__meta" data-t="head-06">
+    <time datetime="2026-08-25">公開日：2026.08.25</time>
+    <time datetime="2026-08-25">更新日：2026.08.25</time>
+    <span>読了目安：約5分</span>
+  </div>
+
+  <figure class="eyecatch">
+      <span class="ph ph--eye eyecatch__img">
+        <img src="images/eyecatch-baycurrent-1day.webp" alt="ベイカレント・コンサルティング 休日1day選考会" onerror="this.parentNode.classList.add('is-missing')">
+        <i>記事アイキャッチ画像<br>16:9 推奨（1200×675）</i>
+      </span>
+      <figcaption class="eyecatch__cap" data-t="head-06b">ベイカレント｜MyVisionコンサルティング限定 休日1day選考会</figcaption>
+    </figure><p class="lead" data-t="head-08">2026年、国内独立系で最大規模の総合コンサルティングファーム<strong>ベイカレント・コンサルティング</strong>が、事業拡大にともなって採用を強化しています。</p>
+  <p class="lead" data-t="head-09">その一環として、<strong>土日や祝日に開催され、1日のうちに面接が完結する特別選考会</strong>が定期的に設けられています。<br>選考会には、<strong>コンサル業界No.1<span class="ref">（※）</span>転職エージェント「MyVisionコンサルティング」</strong>などから応募が可能です。<br>この記事では、その詳細についてご紹介します。</p>
+</div>
+
+<div class="wrap" data-blk="lead" data-blk-name="リード直下CTA">
+  <div class="ctabox rv">
+    <p class="ctabox__k" data-t="lead-01">限定選考会を毎月開催中！</p>
+    <p class="ctabox__t" data-t="lead-02">ベイカレントの休日1day選考会に応募する</p>
+    <p class="ctabox__s" data-t="lead-03">登録所要時間1分・ご利用完全無料</p>
+    <a class="btn" data-act="join" data-cta-copy="まずはエージェントに登録する" data-attitude="ベイカレントの休日1day選考会に興味がある_bc01_v08a_c1_lead" href="https://form.my-vision.co.jp/forms/d0aa9cac-b2de-480f-a8fc-07f96641a156?attitude=%E3%83%99%E3%82%A4%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%88%E3%81%AE%E4%BC%91%E6%97%A51day%E9%81%B8%E8%80%83%E4%BC%9A%E3%81%AB%E8%88%88%E5%91%B3%E3%81%8C%E3%81%82%E3%82%8B_bc01_v08a_c1_lead">まずはエージェントに登録する</a>
+    <p class="btn-note" data-t="lead-04">MyVisionコンサルティングの申込フォームへ移動します</p>
+  </div>
+</div>
+
+<div class="wrap" style="padding-top:12px;padding-bottom:8px" data-blk="toc" data-blk-name="目次">
+  <nav class="toc rv" aria-label="目次">
+    <p class="toc__t" data-t="toc-01">目次</p>
+    <ol>
+      <li><a href="#about" data-t="toc-02">「休日1day選考会」とは</a></li><li><a href="#flow" data-t="toc-03">参加は簡単4ステップ</a></li><li><a href="#bay" data-t="toc-04">ベイカレント・コンサルティングという選択肢</a></li><li><a href="#hook" data-t="toc-05">なぜ今、ベイカレントが採用を強化しているのか</a></li><li><a href="#record" data-t="toc-06">開催実績：2024年3月から継続開催</a></li><li><a href="#mv" data-t="toc-07">MyVisionコンサルティングについて</a></li><li><a href="#faq" data-t="toc-08">よくある質問</a></li></ol>
+  </nav>
+</div>
+
+<section class="sec sec--tint" id="about" data-blk="about" data-blk-name="01 「休日1day選考会」とは">
+  <div class="wrap">
+    <h2 class="rv" data-t="about-01"><span class="num">01</span>「休日1day選考会」とは</h2>
+    <p class="rv" data-t="about-02">通常の中途選考は、書類選考 → 一次面接 → 二次面接 → 最終面接⇀オファー面談と、平日日中に複数回の企業訪問・オンライン面接が発生します。休日1day選考会は、1次面接から最終面接、内定通知までを<strong>休日1日に集約した特別枠</strong>です。</p>
+
+    <p class="note" data-t="about-02b">※ 選考の進み方は開催回・ご経歴により異なります。内定通知が後日となるケースもあります。</p><div class="firmcard rv">
+      <span class="ph ph--bc firmcard__logo">
+        <img src="images/logo-baycurrent-color.webp" alt="ベイカレント・コンサルティング" onerror="this.parentNode.classList.add('is-missing')">
+        <i>ベイカレントロゴ<br>カラー 11:3</i>
+      </span>
+      <p class="firmcard__b" data-t="about-03"><span class="firmcard__k">対象企業</span>株式会社ベイカレント<br>コンサルティング本部</p>
+    </div>
+
+    <div class="factswrap"><div class="facts rv">
+      <div class="facts__row"><div class="facts__k" data-t="about-04">開催頻度</div><div class="facts__v" data-t="about-05">毎月1〜2回程度（開催されない月もあります）</div></div>
+      <div class="facts__row"><div class="facts__k" data-t="about-06">開催曜日</div><div class="facts__v" data-t="about-07">土曜日が中心。日曜・祝日での開催実績もあります</div></div>
+      <div class="facts__row"><div class="facts__k" data-t="about-08">開催地</div><div class="facts__v" data-t="about-09">東京／名古屋／大阪（回によって異なります）</div></div>
+      <div class="facts__row"><div class="facts__k" data-t="about-10">対象職種</div><div class="facts__v" data-t="about-11">経営コンサルタントやITエンジニアなど幅広く募集中<br>※当日参加面接官によって、日程ごとに一部対象外となる職種がございます。</div></div>
+      <div class="facts__row"><div class="facts__k" data-t="about-12">申込期限</div><div class="facts__v" data-t="about-13">開催日のおおむね2〜5日前まで<br>※枠には限りがあるため、前倒しで受付終了となることもございます</div></div>
+      <div class="facts__row"><div class="facts__k" data-t="about-14">参加ルート</div><div class="facts__v" data-t="about-15">転職エージェント経由で応募可能。<br>MyVisionコンサルティング限定日程での応募がおすすめ。</div></div>
+    </div>
+
+    </div><h3 class="rv" data-t="about-16">通常選考との違い</h3>
+    <div class="tblwrap rv">
+      <table>
+        <colgroup><col class="c1"><col class="c2"><col class="c3"></colgroup>
+        <thead>
+          <tr><th></th><th data-t="about-17">自己応募による中途選考</th><th data-t="about-18">休日1day選考会</th></tr>
+        </thead>
+        <tbody>
+          <tr><th data-t="about-19">日程</th><td data-t="about-20">平日日中に複数回</td><td data-t="about-21">休日1日で完結</td></tr>
+          <tr><th data-t="about-22">一次面接から内定まで</th><td data-t="about-23">日程調整次第で1.5~3か月</td><td data-t="about-24">面接は1日、最短当日に内定通知</td></tr>
+          <tr><th data-t="about-28">在職中の負担</th><td data-t="about-29">有給・中抜けが必要</td><td data-t="about-30">就業日に影響しにくい</td></tr>
+          <tr><th data-t="about-31">ケース面接対策</th><td data-t="about-32">自力で準備</td><td data-t="about-33">平日夜にオンラインで対人ケース面接練習（MyVisionなら複数回可）</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note" data-t="about-34">※ 選考フロー・当日の内容は開催回によって異なります。詳細はキャリア面談時にご案内します。</p>
+  <aside class="column">
+      <h3 class="column__t" data-t="about-36">ベイカレント以外にも、MyVisionは各ファームの選考会を実施しています</h3>
+      <p class="column__b" data-t="about-37">MyVisionコンサルティングは、コンサル業界に特化したエージェントとして、複数のファームの休日選考会への応募を受け付けております。ご経歴や志向により、他ファームとの併願もご提案が可能です。</p>
+      <span class="ph ph--firms column__img">
+        <img src="images/firm-logos.webp" alt="MyVisionが選考会を実施しているコンサルティングファーム" onerror="this.parentNode.classList.add('is-missing')">
+        <i>実施企業ロゴ 3列×4段＝12社<br>比率は自由（枠は元画像に追従）</i>
+      </span>
+      <p class="column__note" data-t="about-38">※ 2026年休日選考会開催企業例（1日完結選考でない企業を含む）</p>
+    </aside></div>
+</section>
+
+<section class="band" data-blk="band-about" data-blk-name="CTAバンド①（01の直後）">
+  <div class="wrap">
+    <p class="band__t rv" data-t="band-about-01">ベイカレントの選考に挑戦してみませんか？</p>
+    <p class="band__s rv" data-t="band-about-02">エントリーは1分。1day選考がご希望でなければ、通常選考での伴走も可能です。</p>
+    <a class="btn rv" data-act="talk" data-cta-copy="無料のキャリア面談を申し込む" data-attitude="まずはキャリア面談で相談したい_bc01_v08a_c2_about" href="https://form.my-vision.co.jp/forms/d0aa9cac-b2de-480f-a8fc-07f96641a156?attitude=%E3%81%BE%E3%81%9A%E3%81%AF%E3%82%AD%E3%83%A3%E3%83%AA%E3%82%A2%E9%9D%A2%E8%AB%87%E3%81%A7%E7%9B%B8%E8%AB%87%E3%81%97%E3%81%9F%E3%81%84_bc01_v08a_c2_about">無料のキャリア面談を申し込む</a>
+  </div>
+</section>
+
+<section class="sec" id="flow" data-blk="flow" data-blk-name="02 参加は簡単4ステップ">
+  <div class="wrap">
+    <h2 class="rv" data-t="flow-01"><span class="num">02</span>参加は簡単4ステップ</h2>
+    <p class="rv" data-t="flow-02">エントリーから内定後の年収交渉まで、MyVisionのキャリアアドバイザーが並走します。</p>
+
+    <ol class="steps rv">
+      <li class="step">
+        <span class="step__n" data-t="flow-03">1</span>
+        <p class="step__t" data-t="flow-04">初回キャリア面談<span class="step__tag">オンライン30〜60分</span></p>
+        <p class="step__b" data-t="flow-05">ご経歴と志向をうかがい、1day選考会が合うかどうか、併願にお勧めの企業も含めてご提案します。参加を決めていない段階でも問題ありません。</p>
+      </li>
+      <li class="step">
+        <span class="step__n" data-t="flow-06">2</span>
+        <p class="step__t" data-t="flow-07">書類送付<span class="step__tag">徹底的に添削</span></p>
+        <p class="step__b" data-t="flow-08">履歴書・職務経歴書をご提出いただき、コンサル選考の観点で添削したうえでMyVisionからエントリーします。</p>
+      </li>
+      <li class="step">
+        <span class="step__n" data-t="flow-09">3</span>
+        <p class="step__t" data-t="flow-10">面接練習<span class="step__tag">平日夜にも、何度でも</span></p>
+        <p class="step__b" data-t="flow-11">ベイカレントの頻出質問・志望動機の伝え方・ケース面接の対人練習を、選考会前にオンラインで対策します。</p>
+      </li>
+      <li class="step step--last">
+        <span class="step__n" data-t="flow-12">4</span>
+        <p class="step__t" data-t="flow-13">選考会当日<span class="step__tag">休日1日で完結</span></p>
+        <p class="step__b" data-t="flow-14">選考会当日に参加。1日のうちに選考が進むため、平日に何度も時間を空ける必要がありません。</p>
+      </li>
+    </ol>
+    </div>
+</section>
+
+<section class="band" data-blk="band-flow" data-blk-name="CTAバンド②（02の直後）">
+  <div class="wrap">
+    <p class="band__t rv" data-t="band-flow-01">この流れで参加する</p>
+    <p class="band__s rv" data-t="band-flow-02">まずはステップ1のキャリア面談からご案内します。</p>
+    <a class="btn rv" data-act="join" data-cta-copy="この流れで参加する" data-attitude="ベイカレントの休日1day選考会に応募したい_bc01_v08a_c3_flow" href="https://form.my-vision.co.jp/forms/d0aa9cac-b2de-480f-a8fc-07f96641a156?attitude=%E3%83%99%E3%82%A4%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%88%E3%81%AE%E4%BC%91%E6%97%A51day%E9%81%B8%E8%80%83%E4%BC%9A%E3%81%AB%E5%BF%9C%E5%8B%9F%E3%81%97%E3%81%9F%E3%81%84_bc01_v08a_c3_flow">この流れで参加する</a>
+  </div>
+</section>
+
+<section class="sec sec--navy" id="bay" data-blk="bay" data-blk-name="03 ベイカレント・コンサルティングという選択肢">
+  <div class="wrap">
+    <span class="ph ph--bc baylogo rv">
+      <img src="images/logo-baycurrent-white.webp" alt="ベイカレント・コンサルティング" onerror="this.parentNode.classList.add('is-missing')">
+      <i>ベイカレントロゴ 白抜き 11:3</i>
+    </span>
+    <h2 class="rv" data-t="bay-01"><span class="num">03</span>ベイカレント・コンサルティングという選択肢</h2>
+    <p class="rv" data-t="bay-02">日系独立系の総合コンサルティングファーム。戦略から実行まで、業界・テーマを横断して支援するのが特徴です。次の3点が主な魅力として挙げられます。</p>
+
+    <ul class="cards rv">
+      <li class="card">
+        <div class="card__h"><span class="card__n" data-t="bay-03">1</span><p class="card__t" data-t="bay-04">ワンプール制</p></div>
+        <p class="card__b" data-t="bay-05">業界・領域で組織を固定せず、一つのプールからプロジェクトにアサインされる体制。特定領域に閉じずキャリアの幅を広げやすい構造です。</p>
+      </li>
+      <li class="card">
+        <div class="card__h"><span class="card__n" data-t="bay-06">2</span><p class="card__t" data-t="bay-07">戦略から実行まで一気通貫</p></div>
+        <p class="card__b" data-t="bay-08">構想だけで終わらず、実装・定着まで伴走する案件が多く、「絵を描いて終わり」になりにくい。さまざまな業界の経験が活きます。</p>
+      </li>
+      <li class="card">
+        <div class="card__h"><span class="card__n" data-t="bay-09">3</span><p class="card__t" data-t="bay-10">未経験からの受け入れ実績多数</p></div>
+        <p class="card__b" data-t="bay-11">事業会社・SIer・金融・メーカー・WEB系など、コンサル未経験からの入社事例が豊富。ポテンシャル採用の枠が継続的にあります。</p>
+      </li>
+      </ul>
+
+    <h3 class="rv" data-t="bay-15">数字で見るベイカレント</h3>
+    <ul class="numgrid rv">
+      <li class="numgrid__i" data-t="bay-16"><span class="numgrid__l">売上高</span><span class="numgrid__v">1,483<small>億円</small></span></li>
+      <li class="numgrid__i" data-t="bay-17"><span class="numgrid__l">従業員数</span><span class="numgrid__v">6,788<small>名</small></span></li>
+      <li class="numgrid__i" data-t="bay-18"><span class="numgrid__l">平均年収</span><span class="numgrid__v">1,331<small>万円</small></span></li>
+    </ul>
+    <p class="note" data-t="bay-19">※ 2026年2月期 有価証券報告書より</p>
+  </div>
+</section>
+
+<section class="sec" id="hook" data-blk="hook" data-blk-name="04 なぜ今ベイカレントが採用を強化しているのか">
+  <div class="wrap">
+    <h2 class="rv" data-t="hook-01"><span class="num">04</span>なぜ今、ベイカレントが採用を強化しているのか</h2>
+    <p class="rv" data-t="hook-02">ベイカレントが採用を継続的に強化している背景には、大きく3つの潮流があります。</p>
+
+    <ul class="cards rv">
+      <li class="card">
+        <div class="card__h"><span class="card__n" data-t="hook-03">1</span><p class="card__t" data-t="hook-04">DX・AI領域の需要拡大</p></div>
+        <p class="card__b" data-t="hook-05">顧客の変革テーマが、単純な業務改善やファイナンスの改善から全社DX・データ／AI活用などへ広がり、上流から実行まで一気通貫で担える人材の需要が高まっています。</p>
+      </li>
+      <li class="card">
+        <div class="card__h"><span class="card__n" data-t="hook-06">2</span><p class="card__t" data-t="hook-07">プロジェクト領域の多様化</p></div>
+        <p class="card__b" data-t="hook-08">幅広い業界の顧客・領域のプロジェクトが常に存在するようになり、<strong>コンサル未経験からでも現職の経験・知見を活かして入社できる</strong>ケースが増えています。</p>
+      </li>
+      <li class="card card--wide">
+        <div class="card__h"><span class="card__n" data-t="hook-09">3</span><p class="card__t" data-t="hook-10">コンサル業界自体の伸びによる採用競争の過熱</p></div>
+        <p class="card__b" data-t="hook-11">中小ファームの倒産数などが取りざたされることもあるコンサル業界ですが、大手の<strong>売り上げは右肩上がりに伸び続けており</strong>、採用競争は過熱し続けています。そのため、平日忙しい優秀人材の獲得のための休日選考会開催がコンサル業界としてもトレンドとなっています。</p>
+      </li>
+    </ul>
+    </div>
+</section>
+
+<section class="sec sec--tint" id="record" data-blk="record" data-blk-name="05 開催実績">
+  <div class="wrap">
+    <h2 class="rv" data-t="record-01"><span class="num">05</span>開催実績：2024年3月から継続開催</h2>
+    <p class="rv" data-t="record-02">単発の企画ではありません。MyVision限定のベイカレント選考会は、<strong>2024年3月の初回から2026年8月まで、2年半にわたって継続的に開催</strong>されています。</p>
+
+    <div class="recsum rv">
+      <div class="recsum__i" data-t="record-03"><span class="recsum__n">2.5<small>年</small></span><span class="recsum__l">継続開催<br>（2024年3月〜）</span></div>
+      <div class="recsum__i" data-t="record-04"><span class="recsum__n">33<small>回</small></span><span class="recsum__l">累計の募集回数<br>（2026年8月時点）</span></div>
+      <div class="recsum__i" data-t="record-05"><span class="recsum__n">3<small>拠点</small></span><span class="recsum__l">東京・名古屋<br>・大阪</span></div>
+    </div>
+
+    <h3 class="rv" data-t="record-06">2026年の開催日（実績）</h3>
+    <div class="rec rv">
+      <div class="rec__row"><div class="rec__m" data-t="record-07">2026年1月</div><div class="rec__d" data-t="record-08"><span class="chip">1/24（土）</span></div></div>
+      <div class="rec__row"><div class="rec__m" data-t="record-09">2026年2月</div><div class="rec__d" data-t="record-10"><span class="chip">2/14（土）</span><span class="chip">2/21（土）</span></div></div>
+      <div class="rec__row"><div class="rec__m" data-t="record-11">2026年3月</div><div class="rec__d" data-t="record-12"><span class="chip">3/20（金・祝）</span><span class="chip">3/28（土）</span></div></div>
+      <div class="rec__row"><div class="rec__m" data-t="record-13">2026年4月</div><div class="rec__d" data-t="record-14"><span class="chip">4/18（土）</span><span class="chip">4/25（土）</span></div></div>
+      <div class="rec__row"><div class="rec__m" data-t="record-15">2026年5月</div><div class="rec__d" data-t="record-16"><span class="chip">5/23（土）</span></div></div>
+      <div class="rec__row"><div class="rec__m" data-t="record-17">2026年6月</div><div class="rec__d" data-t="record-18"><span class="chip">6/20（土）</span><span class="chip chip--multi">6/21（日）東名阪</span></div></div>
+      <div class="rec__row"><div class="rec__m" data-t="record-19">2026年7月</div><div class="rec__d" data-t="record-20"><span class="chip chip--multi">7/18（土）東名阪</span><span class="chip">7/25（土）</span></div></div>
+      <div class="rec__row"><div class="rec__m" data-t="record-21">2026年8月</div><div class="rec__d" data-t="record-22"><span class="chip chip--multi">8/22（土）東名阪</span></div></div>
+    </div>
+    <p class="note" data-t="record-23">※ 2024年3月〜2025年12月にも継続して開催しています（上記は2026年分の抜粋）。<br>※ 開催の有無・日程・開催地は毎回異なります。最新の日程は、ご登録後にキャリアアドバイザーからご案内します。</p>
+  </div>
+</section>
+
+<section class="band" data-blk="band-bay" data-blk-name="CTAバンド③（05の直後）">
+  <div class="wrap">
+    <p class="band__t rv" data-t="band-bay-01">ベイカレントの選考を、休日1日で。</p>
+    <p class="band__s rv" data-t="band-bay-02">まずはエージェントとの作戦会議から</p>
+    <a class="btn rv" data-act="join" data-cta-copy="1day選考会に申し込む" data-attitude="ベイカレントの休日1day選考会に応募したい_bc01_v08a_c4_record" href="https://form.my-vision.co.jp/forms/d0aa9cac-b2de-480f-a8fc-07f96641a156?attitude=%E3%83%99%E3%82%A4%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%88%E3%81%AE%E4%BC%91%E6%97%A51day%E9%81%B8%E8%80%83%E4%BC%9A%E3%81%AB%E5%BF%9C%E5%8B%9F%E3%81%97%E3%81%9F%E3%81%84_bc01_v08a_c4_record">1day選考会に申し込む</a>
+  </div>
+</section>
+
+<section class="sec" id="mv" data-blk="mv" data-blk-name="06 MyVisionコンサルティングについて">
+  <div class="wrap">
+    <h2 class="rv" data-t="mv-01"><span class="num">06</span>MyVisionコンサルティングについて</h2>
+    <p class="rv" data-t="mv-02">この休日1day選考会を受け付けているのは、<strong>コンサルティング業界に特化した転職エージェント「MyVisionコンサルティング」</strong>です。特化型ならではの3つの強みがあります。</p>
+
+    <ul class="cards cards--3 rv">
+      <li class="card">
+        <div class="card__h"><span class="card__n" data-t="mv-03">1</span><p class="card__t" data-t="mv-04">コンサル業界に特化</p></div>
+        <p class="card__b" data-t="mv-05">総合型ではなくコンサル業界専門。ファームごとの評価基準・求める人物像の差分まで踏まえてご提案します。</p>
+      </li>
+      <li class="card">
+        <div class="card__h"><span class="card__n" data-t="mv-06">2</span><p class="card__t" data-t="mv-07">ファームとの直接のリレーション</p></div>
+        <p class="card__b" data-t="mv-08">今回の休日1day選考会のように、MyVision限定の選考枠・日程をご案内できるのは、各ファームとの直接の関係があるためです。</p>
+      </li>
+      <li class="card">
+        <div class="card__h"><span class="card__n" data-t="mv-09">3</span><p class="card__t" data-t="mv-10">選考対策の手厚さ</p></div>
+        <p class="card__b" data-t="mv-11">書類添削からケース面接対策まで、選考ごとに個別で対策します。初めてコンサルを受ける方の利用が多数を占めます。</p>
+      </li>
+    </ul>
+    <p class="note" data-t="mv-12">※ ご登録・ご相談は無料です。</p>
+  </div>
+</section>
+
+<section class="sec sec--tint" id="faq" data-blk="faq" data-blk-name="07 よくある質問">
+  <div class="wrap">
+    <h2 class="rv" data-t="faq-01"><span class="num">07</span>よくある質問</h2>
+    <div class="faq rv">
+      <details>
+        <summary data-t="faq-02">コンサル未経験でも参加できますか？</summary>
+        <div class="faq__a" data-t="faq-03">はい。コンサル未経験の方の内定事例が多数ございます。ご経歴によってお勧めする選考ルートが変わる場合もございますので、まずはキャリア面談で詳細をお聞かせください。</div>
+      </details>
+      <details>
+        <summary data-t="faq-04">まだ転職するか決めていません。参加しても大丈夫ですか？</summary>
+        <div class="faq__a" data-t="faq-05">問題ございません。情報収集の段階でのご相談も歓迎です。キャリアのご状況により、敢えて弊社から現職残留（あと半年頑張ってみる、など）をご提案することもございます。</div>
+      </details>
+      <details>
+        <summary data-t="faq-06">今の会社に知られませんか？</summary>
+        <div class="faq__a" data-t="faq-07">ご本人の同意なく、現職や第三者にご相談内容を共有することはありません。面談もオンラインで、平日夜間の対応が可能です。</div>
+      </details>
+      <details>
+        <summary data-t="faq-08">次の開催日程はいつですか？</summary>
+        <div class="faq__a" data-t="faq-09">開催はおおむね毎月1〜2回、土曜日が中心です。開催週は月により異なるため、MyVisionコンサルティングにご登録のうえ情報をお受け取りください。</div>
+      </details>
+      <details>
+        <summary data-t="faq-10">費用はかかりますか？</summary>
+        <div class="faq__a" data-t="faq-11">キャリア面談・書類添削・面接練習・選考会参加まで、すべて無料です。</div>
+      </details>
+      <details>
+        <summary data-t="faq-12">ベイカレント以外のファームも見られますか？</summary>
+        <div class="faq__a" data-t="faq-13">はい。MyVisionコンサルティングは日本国内で事業展開するコンサルファームのほとんどの募集中求人を取り揃えております。ご志向をうかがったうえで、他ファームと比較しながらご提案します。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--navy" id="entry" data-blk="entry" data-blk-name="最終CTA（二択）">
+  <div class="wrap">
+    <div class="logopair rv">
+      <span class="ph ph--bc">
+        <img src="images/logo-baycurrent-white.webp" alt="ベイカレント・コンサルティング" onerror="this.parentNode.classList.add('is-missing')">
+        <i>ベイカレントロゴ<br>白抜き 11:3</i>
+      </span>
+      <span class="logopair__x" data-t="entry-01">×</span>
+      <span class="ph ph--mv">
+        <img src="images/logo-myvision-white.webp" alt="MyVisionコンサルティング" onerror="this.parentNode.classList.add('is-missing')">
+        <i>MyVisionロゴ<br>白抜き 3:1</i>
+      </span>
+    </div>
+
+    <h2 class="rv" style="font-size:22px" data-t="entry-02"><span class="num">ENTRY</span>休日1day選考会への応募を受け付けています</h2>
+    <p class="rv" style="color:#C6D9F0;font-size:14.5px" data-t="entry-03">在職中でも、休日1日で選考が完結します。<br>まだ迷っている段階でのご相談も歓迎です。</p>
+
+    <div class="ctabox ctabox--onnavy rv">
+      <p class="ctabox__t" data-t="entry-04">選考会への参加を考えている方</p>
+      <p class="ctabox__s" data-t="entry-05">キャリア面談のうえ、直近の選考会へエントリーします。</p>
+      <a class="btn" data-act="join" data-cta-copy="1day選考会に応募する" data-attitude="ベイカレントの休日1day選考会に応募したい_bc01_v08a_c5_entry" href="https://form.my-vision.co.jp/forms/d0aa9cac-b2de-480f-a8fc-07f96641a156?attitude=%E3%83%99%E3%82%A4%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%88%E3%81%AE%E4%BC%91%E6%97%A51day%E9%81%B8%E8%80%83%E4%BC%9A%E3%81%AB%E5%BF%9C%E5%8B%9F%E3%81%97%E3%81%9F%E3%81%84_bc01_v08a_c5_entry">1day選考会に応募する</a>
+    </div>
+
+    <div class="ctabox ctabox--onnavy rv">
+      <p class="ctabox__t" data-t="entry-06">まずは話を聞いてみたい方</p>
+      <p class="ctabox__s" data-t="entry-07">コンサル業界の全体像や、ご経歴での可能性からお話しします。</p>
+      <a class="btn btn--ghost" data-act="talk" data-cta-copy="コンサル業界について話を聞く" data-attitude="コンサル業界について話を聞きたい_bc01_v08a_c6_entry" href="https://form.my-vision.co.jp/forms/d0aa9cac-b2de-480f-a8fc-07f96641a156?attitude=%E3%82%B3%E3%83%B3%E3%82%B5%E3%83%AB%E6%A5%AD%E7%95%8C%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E8%A9%B1%E3%82%92%E8%81%9E%E3%81%8D%E3%81%9F%E3%81%84_bc01_v08a_c6_entry">コンサル業界について話を聞く</a>
+    </div>
+  </div>
+</section>
+
+</article>
+
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <a class="ph ph--mv ftr__logo" href="https://my-vision.co.jp/" target="_blank" rel="noopener">
+      <img src="images/logo-myvision-white.webp" alt="MyVisionコンサルティング" onerror="this.parentNode.classList.add('is-missing')">
+      <i>MyVisionロゴ 白抜き 3:1</i>
+    </a>
+    <p class="ftr__lead" data-t="footer-01">コンサル転職No.1<span class="ref">（※）</span>エージェント</p>
+    <ul class="ftr__links">
+      <li><a href="https://my-vision.co.jp/" target="_blank" rel="noopener" data-t="footer-02">MyVisionコンサルティング</a></li>
+      <li><a href="https://my-vision.co.jp/" target="_blank" rel="noopener" data-t="footer-03">運営会社</a></li>
+      <li><a href="https://my-vision.co.jp/terms/privacy" target="_blank" rel="noopener" data-t="footer-04">プライバシーポリシー</a></li>
+    </ul>
+    <div class="ftr__notes">
+      <p style="margin:0" data-t="footer-05">※ 厚生労働省職業安定局 人材サービス総合サイトおよび各社決算資料より2024年10月~2025年3月におけるコンサル特化転職エージェントの支援実績数から弊社推計</p>
+      <p class="ftr__cr" data-t="footer-06">© MyVision inc.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- 追従CTA（SPのみ表示。文書順の最後 = c7） -->
+<div class="sticky" id="stickyBar" data-blk="fixed" data-blk-name="追従CTAバー（SPのみ）">
+  <div class="sticky__in">
+    <a class="btn" data-act="join" data-cta-copy="ベイカレントの1day選考会に応募する" data-attitude="ベイカレントの休日1day選考会に応募したい_bc01_v08a_c7_fixed" href="https://form.my-vision.co.jp/forms/d0aa9cac-b2de-480f-a8fc-07f96641a156?attitude=%E3%83%99%E3%82%A4%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%88%E3%81%AE%E4%BC%91%E6%97%A51day%E9%81%B8%E8%80%83%E4%BC%9A%E3%81%AB%E5%BF%9C%E5%8B%9F%E3%81%97%E3%81%9F%E3%81%84_bc01_v08a_c7_fixed">ベイカレントの1day選考会に応募する</a>
+    <p class="sticky__note" data-t="fixed-01">MyVision限定の休日日程／登録所要1分・完全無料</p>
+  </div>
+</div>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* スクロールリビール */
+  if('IntersectionObserver' in window && !reduce){
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('is-in'); io.unobserve(e.target); } });
+    },{rootMargin:'0px 0px -8% 0px',threshold:.06});
+    document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
+  }else{
+    document.querySelectorAll('.rv').forEach(function(el){ el.classList.add('is-in'); });
+  }
+  /* 保険：IntersectionObserverが効かない環境（プレビュー用iframe等）でも中身が消えないようにする */
+  setTimeout(function(){
+    document.querySelectorAll('.rv:not(.is-in)').forEach(function(el){
+      var r = el.getBoundingClientRect();
+      if(r.top < window.innerHeight * 1.2) el.classList.add('is-in');
+    });
+  }, 1200);
+
+  /* 追従CTA：リード通過後に出す。最終CTAが見えたら引っ込める */
+  var bar = document.getElementById('stickyBar');
+  var entry = document.getElementById('entry');
+  var trigger = document.getElementById('hook');
+  var pastLead = false, atEntry = false;
+  function sync(){ bar.classList.toggle('is-on', pastLead && !atEntry); }
+
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){
+      pastLead = es[0].boundingClientRect.top < 0 || es[0].isIntersecting; sync();
+    },{threshold:0}).observe(trigger);
+
+    new IntersectionObserver(function(es){
+      atEntry = es[0].isIntersecting; sync();
+    },{threshold:.12}).observe(entry);
+  }
+})();
+
+/* ---- LPに付いたUTM・クリックIDをフォームへ引き継ぐ ----
+   広告 → LP（?utm_source=... 等）→ CTA → フォーム。
+   CTAのhrefは静的なので、このスクリプトが無いとUTMはLPで消える。 */
+(function(){
+  var KEEP = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term',
+              'gclid','wbraid','gbraid','fbclid','yclid','msclkid','ttclid','li_fat_id',
+              'campaignid','adgroupid','creative','keyword','matchtype','device'];
+  var q = new URLSearchParams(location.search);
+  var carry = [];
+  KEEP.forEach(function(k){ var v = q.get(k); if(v) carry.push([k,v]); });
+  if(!carry.length) return;
+  document.querySelectorAll('a.btn[href]').forEach(function(a){
+    try{
+      var u = new URL(a.href);
+      carry.forEach(function(kv){ if(!u.searchParams.has(kv[0])) u.searchParams.set(kv[0], kv[1]); });
+      a.href = u.toString();
+    }catch(e){}
+  });
+})();
+</script>
+</body>
+</html>
