@@ -12,7 +12,7 @@
      1) CTAの遷移先：確定済み。
         https://form.my-vision.co.jp/forms/d0aa9cac-b2de-480f-a8fc-07f96641a156
         クエリは attitude 1本のみ:
-          ?attitude=<日本語の意向>_bc01_v08a_c<通し番号>_<ブロック>
+          ?attitude=<日本語の意向>_bc01_v10a_c<通し番号>_<ブロック>
         先頭の日本語がエージェントの読む「ユーザーが何をしたがっているか」。
         以降のアンダーバー区切りが集計用のキー（_ で split して使う）。
         UTM / gclid 等は body 末尾のスクリプトが LP の URL から引き継ぐ。
@@ -46,7 +46,7 @@
 <!-- dataLayer（GTMスニペットより前。attitude計測設計 v2 の分母分離用） -->
 <script>
   window.dataLayer = window.dataLayer || [];
-  dataLayer.push({ lp_id: 'bc01', lp_version: 'v08a', lp_path: 'mv-baycurrent-1day-blog-001' });
+  dataLayer.push({ lp_id: 'bc01', lp_version: 'v10a', lp_path: 'mv-baycurrent-1day-blog-001' });
 </script>
 
 <!-- Google Tag Manager -->
@@ -93,7 +93,6 @@ body{
   font-size:16px;line-height:1.95;letter-spacing:.02em;
   font-feature-settings:"palt" 1;
   -webkit-font-smoothing:antialiased;
-  padding-bottom:84px; /* sticky bar */
 }
 img{max-width:100%;height:auto;display:block}
 a{color:var(--brand);text-underline-offset:3px}
@@ -107,8 +106,7 @@ a{color:var(--brand);text-underline-offset:3px}
 
 /* ========== header ========== */
 .hd{
-  position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);
-  backdrop-filter:saturate(160%) blur(8px);
+  position:sticky;top:0;z-index:50;background:#fff;
   border-bottom:1px solid #E7EBF1;
 }
 .hd__in{display:flex;align-items:center;gap:10px;height:54px;max-width:var(--w);margin-inline:auto;padding-inline:var(--pad)}
@@ -385,7 +383,7 @@ details[open] summary::after{transform:rotate(-135deg)}
 /* ---------- タブレット以上（少数派。記事幅を広げるだけ） ---------- */
 @media (min-width:768px){
   :root{--w:760px;--pad:32px}
-  body{font-size:16.5px;padding-bottom:0}
+  body{font-size:16.5px}
   h1{font-size:34px}
   h2{font-size:25px}
   .sec{padding:64px 0}
@@ -422,6 +420,22 @@ details[open] summary::after{transform:rotate(-135deg)}
 
 /* ========== 注記マーカー（v03b） ========== */
 .ref{font-size:.6em;font-weight:700;vertical-align:.42em;letter-spacing:0;margin-left:1px;opacity:.8}
+
+/* CTA直下の注釈（背景ごとの色）*/
+.band .btn-note{color:#C3D8F2}
+.sec--navy .btn-note{color:#A9C4E6}
+
+/* 要件表：横スクロールできることが分かるようにスクロールバーを常時出す */
+/* 標準プロパティ(scrollbar-width)を併記すると Chromium が ::-webkit-scrollbar を無視して
+   オーバーレイ表示のままになるため、ここでは webkit 側だけを指定する */
+.factswrap::-webkit-scrollbar{-webkit-appearance:none;height:7px;display:block}
+.factswrap::-webkit-scrollbar-track{background:#EDF1F6}
+.factswrap::-webkit-scrollbar-thumb{background:var(--brand-line);border-radius:4px}
+
+/* 追従CTAのボタン内・上段の小見出し */
+.btn__top{flex-basis:100%;text-align:center;font-size:10.5px;font-weight:700;
+  letter-spacing:.04em;line-height:1.4;opacity:.92;margin-bottom:1px}
+.sticky .btn{min-height:60px;padding-top:8px;padding-bottom:8px}
 </style>
 <noscript><style>.rv{opacity:1;transform:none}.sticky{display:none}</style></noscript>
 </head>
@@ -486,8 +500,8 @@ details[open] summary::after{transform:rotate(-135deg)}
     <p class="ctabox__k" data-t="lead-01">限定選考会を毎月開催中！</p>
     <p class="ctabox__t" data-t="lead-02">ベイカレントの休日1day選考会に応募する</p>
     <p class="ctabox__s" data-t="lead-03">登録所要時間1分・ご利用完全無料</p>
-    <a class="btn" data-act="join" data-cta-copy="まずはエージェントに登録する" data-attitude="ベイカレントの休日1day選考会に興味がある_bc01_v08a_c1_lead" href="https://form.my-vision.co.jp/forms/d0aa9cac-b2de-480f-a8fc-07f96641a156?attitude=%E3%83%99%E3%82%A4%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%88%E3%81%AE%E4%BC%91%E6%97%A51day%E9%81%B8%E8%80%83%E4%BC%9A%E3%81%AB%E8%88%88%E5%91%B3%E3%81%8C%E3%81%82%E3%82%8B_bc01_v08a_c1_lead">まずはエージェントに登録する</a>
-    <p class="btn-note" data-t="lead-04">MyVisionコンサルティングの申込フォームへ移動します</p>
+    <a class="btn" data-act="join" data-cta-copy="まずはエージェントに登録する" data-attitude="ベイカレントの休日1day選考会に興味がある_bc01_v10a_c1_lead" href="https://form.my-vision.co.jp/forms/d0aa9cac-b2de-480f-a8fc-07f96641a156?attitude=%E3%83%99%E3%82%A4%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%88%E3%81%AE%E4%BC%91%E6%97%A51day%E9%81%B8%E8%80%83%E4%BC%9A%E3%81%AB%E8%88%88%E5%91%B3%E3%81%8C%E3%81%82%E3%82%8B_bc01_v10a_c1_lead">まずはエージェントに登録する</a>
+    <p class="btn-note" data-t="lead-04">MyVisionコンサルティングの登録フォームへ移動します</p>
   </div>
 </div>
 
@@ -495,14 +509,14 @@ details[open] summary::after{transform:rotate(-135deg)}
   <nav class="toc rv" aria-label="目次">
     <p class="toc__t" data-t="toc-01">目次</p>
     <ol>
-      <li><a href="#about" data-t="toc-02">「休日1day選考会」とは</a></li><li><a href="#flow" data-t="toc-03">参加は簡単4ステップ</a></li><li><a href="#bay" data-t="toc-04">ベイカレント・コンサルティングという選択肢</a></li><li><a href="#hook" data-t="toc-05">なぜ今、ベイカレントが採用を強化しているのか</a></li><li><a href="#record" data-t="toc-06">開催実績：2024年3月から継続開催</a></li><li><a href="#mv" data-t="toc-07">MyVisionコンサルティングについて</a></li><li><a href="#faq" data-t="toc-08">よくある質問</a></li></ol>
+      <li><a href="#about" data-t="toc-02">「休日1day選考会」とは</a></li><li><a href="#flow" data-t="toc-03">参加は簡単4ステップ</a></li><li><a href="#bay" data-t="toc-04">ベイカレント・コンサルティングという選択肢</a></li><li><a href="#hook" data-t="toc-05">なぜ今、ベイカレントが採用を強化しているのか</a></li><li><a href="#record" data-t="toc-06">開催実績：2024年3月から継続開催</a></li><li><a href="#mv" data-t="toc-07">MyVisionコンサルティングについて</a></li><li><a href="#faq" data-t="toc-08">よくあるご質問</a></li></ol>
   </nav>
 </div>
 
 <section class="sec sec--tint" id="about" data-blk="about" data-blk-name="01 「休日1day選考会」とは">
   <div class="wrap">
     <h2 class="rv" data-t="about-01"><span class="num">01</span>「休日1day選考会」とは</h2>
-    <p class="rv" data-t="about-02">通常の中途選考は、書類選考 → 一次面接 → 二次面接 → 最終面接⇀オファー面談と、平日日中に複数回の企業訪問・オンライン面接が発生します。休日1day選考会は、1次面接から最終面接、内定通知までを<strong>休日1日に集約した特別枠</strong>です。</p>
+    <p class="rv" data-t="about-02">通常の中途選考は、書類選考 → 一次面接 → 二次面接 → 最終面接 → オファー面談と、平日日中に複数回の企業訪問・オンライン面接が発生します。休日1day選考会は、一次面接から最終面接、内定通知までを<strong>休日1日に集約した特別枠</strong>です。</p>
 
     <p class="note" data-t="about-02b">※ 選考の進み方は開催回・ご経歴により異なります。内定通知が後日となるケースもあります。</p><div class="firmcard rv">
       <span class="ph ph--bc firmcard__logo">
@@ -538,7 +552,7 @@ details[open] summary::after{transform:rotate(-135deg)}
     </div>
     <p class="note" data-t="about-34">※ 選考フロー・当日の内容は開催回によって異なります。詳細はキャリア面談時にご案内します。</p>
   <aside class="column">
-      <h3 class="column__t" data-t="about-36">ベイカレント以外にも、MyVisionは各ファームの選考会を実施しています</h3>
+      <h3 class="column__t" data-t="about-36">ベイカレント以外にも、MyVisionは各ファームの選考会への応募を受け付けています</h3>
       <p class="column__b" data-t="about-37">MyVisionコンサルティングは、コンサル業界に特化したエージェントとして、複数のファームの休日選考会への応募を受け付けております。ご経歴や志向により、他ファームとの併願もご提案が可能です。</p>
       <span class="ph ph--firms column__img">
         <img src="images/firm-logos.webp" alt="MyVisionが選考会を実施しているコンサルティングファーム" onerror="this.parentNode.classList.add('is-missing')">
@@ -552,8 +566,8 @@ details[open] summary::after{transform:rotate(-135deg)}
   <div class="wrap">
     <p class="band__t rv" data-t="band-about-01">ベイカレントの選考に挑戦してみませんか？</p>
     <p class="band__s rv" data-t="band-about-02">エントリーは1分。1day選考がご希望でなければ、通常選考での伴走も可能です。</p>
-    <a class="btn rv" data-act="talk" data-cta-copy="無料のキャリア面談を申し込む" data-attitude="まずはキャリア面談で相談したい_bc01_v08a_c2_about" href="https://form.my-vision.co.jp/forms/d0aa9cac-b2de-480f-a8fc-07f96641a156?attitude=%E3%81%BE%E3%81%9A%E3%81%AF%E3%82%AD%E3%83%A3%E3%83%AA%E3%82%A2%E9%9D%A2%E8%AB%87%E3%81%A7%E7%9B%B8%E8%AB%87%E3%81%97%E3%81%9F%E3%81%84_bc01_v08a_c2_about">無料のキャリア面談を申し込む</a>
-  </div>
+    <a class="btn rv" data-act="talk" data-cta-copy="無料のキャリア面談を申し込む" data-attitude="まずはキャリア面談で相談したい_bc01_v10a_c2_about" href="https://form.my-vision.co.jp/forms/d0aa9cac-b2de-480f-a8fc-07f96641a156?attitude=%E3%81%BE%E3%81%9A%E3%81%AF%E3%82%AD%E3%83%A3%E3%83%AA%E3%82%A2%E9%9D%A2%E8%AB%87%E3%81%A7%E7%9B%B8%E8%AB%87%E3%81%97%E3%81%9F%E3%81%84_bc01_v10a_c2_about">無料のキャリア面談を申し込む</a>
+  <p class="btn-note" data-t="band-about-03">MyVisionコンサルティングの登録フォームへ移動します</p></div>
 </section>
 
 <section class="sec" id="flow" data-blk="flow" data-blk-name="02 参加は簡単4ステップ">
@@ -590,8 +604,8 @@ details[open] summary::after{transform:rotate(-135deg)}
   <div class="wrap">
     <p class="band__t rv" data-t="band-flow-01">この流れで参加する</p>
     <p class="band__s rv" data-t="band-flow-02">まずはステップ1のキャリア面談からご案内します。</p>
-    <a class="btn rv" data-act="join" data-cta-copy="この流れで参加する" data-attitude="ベイカレントの休日1day選考会に応募したい_bc01_v08a_c3_flow" href="https://form.my-vision.co.jp/forms/d0aa9cac-b2de-480f-a8fc-07f96641a156?attitude=%E3%83%99%E3%82%A4%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%88%E3%81%AE%E4%BC%91%E6%97%A51day%E9%81%B8%E8%80%83%E4%BC%9A%E3%81%AB%E5%BF%9C%E5%8B%9F%E3%81%97%E3%81%9F%E3%81%84_bc01_v08a_c3_flow">この流れで参加する</a>
-  </div>
+    <a class="btn rv" data-act="join" data-cta-copy="この流れで参加する" data-attitude="ベイカレントの休日1day選考会に応募したい_bc01_v10a_c3_flow" href="https://form.my-vision.co.jp/forms/d0aa9cac-b2de-480f-a8fc-07f96641a156?attitude=%E3%83%99%E3%82%A4%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%88%E3%81%AE%E4%BC%91%E6%97%A51day%E9%81%B8%E8%80%83%E4%BC%9A%E3%81%AB%E5%BF%9C%E5%8B%9F%E3%81%97%E3%81%9F%E3%81%84_bc01_v10a_c3_flow">この流れで参加する</a>
+  <p class="btn-note" data-t="band-flow-03">MyVisionコンサルティングの登録フォームへ移動します</p></div>
 </section>
 
 <section class="sec sec--navy" id="bay" data-blk="bay" data-blk-name="03 ベイカレント・コンサルティングという選択肢">
@@ -644,7 +658,7 @@ details[open] summary::after{transform:rotate(-135deg)}
       </li>
       <li class="card card--wide">
         <div class="card__h"><span class="card__n" data-t="hook-09">3</span><p class="card__t" data-t="hook-10">コンサル業界自体の伸びによる採用競争の過熱</p></div>
-        <p class="card__b" data-t="hook-11">中小ファームの倒産数などが取りざたされることもあるコンサル業界ですが、大手の<strong>売り上げは右肩上がりに伸び続けており</strong>、採用競争は過熱し続けています。そのため、平日忙しい優秀人材の獲得のための休日選考会開催がコンサル業界としてもトレンドとなっています。</p>
+        <p class="card__b" data-t="hook-11">中小ファームの倒産数などが取りざたされることもあるコンサル業界ですが、大手の<strong>売上高は右肩上がりに伸び続けており</strong>、採用競争は過熱し続けています。そのため、平日忙しい優秀人材の獲得のための休日選考会開催がコンサル業界としてもトレンドとなっています。</p>
       </li>
     </ul>
     </div>
@@ -680,8 +694,8 @@ details[open] summary::after{transform:rotate(-135deg)}
   <div class="wrap">
     <p class="band__t rv" data-t="band-bay-01">ベイカレントの選考を、休日1日で。</p>
     <p class="band__s rv" data-t="band-bay-02">まずはエージェントとの作戦会議から</p>
-    <a class="btn rv" data-act="join" data-cta-copy="1day選考会に申し込む" data-attitude="ベイカレントの休日1day選考会に応募したい_bc01_v08a_c4_record" href="https://form.my-vision.co.jp/forms/d0aa9cac-b2de-480f-a8fc-07f96641a156?attitude=%E3%83%99%E3%82%A4%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%88%E3%81%AE%E4%BC%91%E6%97%A51day%E9%81%B8%E8%80%83%E4%BC%9A%E3%81%AB%E5%BF%9C%E5%8B%9F%E3%81%97%E3%81%9F%E3%81%84_bc01_v08a_c4_record">1day選考会に申し込む</a>
-  </div>
+    <a class="btn rv" data-act="join" data-cta-copy="1day選考会に申し込む" data-attitude="ベイカレントの休日1day選考会に応募したい_bc01_v10a_c4_record" href="https://form.my-vision.co.jp/forms/d0aa9cac-b2de-480f-a8fc-07f96641a156?attitude=%E3%83%99%E3%82%A4%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%88%E3%81%AE%E4%BC%91%E6%97%A51day%E9%81%B8%E8%80%83%E4%BC%9A%E3%81%AB%E5%BF%9C%E5%8B%9F%E3%81%97%E3%81%9F%E3%81%84_bc01_v10a_c4_record">1day選考会に申し込む</a>
+  <p class="btn-note" data-t="band-bay-03">MyVisionコンサルティングの登録フォームへ移動します</p></div>
 </section>
 
 <section class="sec" id="mv" data-blk="mv" data-blk-name="06 MyVisionコンサルティングについて">
@@ -707,9 +721,9 @@ details[open] summary::after{transform:rotate(-135deg)}
   </div>
 </section>
 
-<section class="sec sec--tint" id="faq" data-blk="faq" data-blk-name="07 よくある質問">
+<section class="sec sec--tint" id="faq" data-blk="faq" data-blk-name="07 よくあるご質問">
   <div class="wrap">
-    <h2 class="rv" data-t="faq-01"><span class="num">07</span>よくある質問</h2>
+    <h2 class="rv" data-t="faq-01"><span class="num">07</span>よくあるご質問</h2>
     <div class="faq rv">
       <details>
         <summary data-t="faq-02">コンサル未経験でも参加できますか？</summary>
@@ -759,14 +773,14 @@ details[open] summary::after{transform:rotate(-135deg)}
     <div class="ctabox ctabox--onnavy rv">
       <p class="ctabox__t" data-t="entry-04">選考会への参加を考えている方</p>
       <p class="ctabox__s" data-t="entry-05">キャリア面談のうえ、直近の選考会へエントリーします。</p>
-      <a class="btn" data-act="join" data-cta-copy="1day選考会に応募する" data-attitude="ベイカレントの休日1day選考会に応募したい_bc01_v08a_c5_entry" href="https://form.my-vision.co.jp/forms/d0aa9cac-b2de-480f-a8fc-07f96641a156?attitude=%E3%83%99%E3%82%A4%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%88%E3%81%AE%E4%BC%91%E6%97%A51day%E9%81%B8%E8%80%83%E4%BC%9A%E3%81%AB%E5%BF%9C%E5%8B%9F%E3%81%97%E3%81%9F%E3%81%84_bc01_v08a_c5_entry">1day選考会に応募する</a>
-    </div>
+      <a class="btn" data-act="join" data-cta-copy="1day選考会に応募する" data-attitude="ベイカレントの休日1day選考会に応募したい_bc01_v10a_c5_entry" href="https://form.my-vision.co.jp/forms/d0aa9cac-b2de-480f-a8fc-07f96641a156?attitude=%E3%83%99%E3%82%A4%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%88%E3%81%AE%E4%BC%91%E6%97%A51day%E9%81%B8%E8%80%83%E4%BC%9A%E3%81%AB%E5%BF%9C%E5%8B%9F%E3%81%97%E3%81%9F%E3%81%84_bc01_v10a_c5_entry">1day選考会に応募する</a>
+    <p class="btn-note" data-t="entry-08">MyVisionコンサルティングの登録フォームへ移動します</p></div>
 
     <div class="ctabox ctabox--onnavy rv">
       <p class="ctabox__t" data-t="entry-06">まずは話を聞いてみたい方</p>
       <p class="ctabox__s" data-t="entry-07">コンサル業界の全体像や、ご経歴での可能性からお話しします。</p>
-      <a class="btn btn--ghost" data-act="talk" data-cta-copy="コンサル業界について話を聞く" data-attitude="コンサル業界について話を聞きたい_bc01_v08a_c6_entry" href="https://form.my-vision.co.jp/forms/d0aa9cac-b2de-480f-a8fc-07f96641a156?attitude=%E3%82%B3%E3%83%B3%E3%82%B5%E3%83%AB%E6%A5%AD%E7%95%8C%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E8%A9%B1%E3%82%92%E8%81%9E%E3%81%8D%E3%81%9F%E3%81%84_bc01_v08a_c6_entry">コンサル業界について話を聞く</a>
-    </div>
+      <a class="btn btn--ghost" data-act="talk" data-cta-copy="コンサル業界について話を聞く" data-attitude="コンサル業界について話を聞きたい_bc01_v10a_c6_entry" href="https://form.my-vision.co.jp/forms/d0aa9cac-b2de-480f-a8fc-07f96641a156?attitude=%E3%82%B3%E3%83%B3%E3%82%B5%E3%83%AB%E6%A5%AD%E7%95%8C%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E8%A9%B1%E3%82%92%E8%81%9E%E3%81%8D%E3%81%9F%E3%81%84_bc01_v10a_c6_entry">コンサル業界について話を聞く</a>
+    <p class="btn-note" data-t="entry-09">MyVisionコンサルティングの登録フォームへ移動します</p></div>
   </div>
 </section>
 
@@ -796,8 +810,8 @@ details[open] summary::after{transform:rotate(-135deg)}
 <!-- 追従CTA（SPのみ表示。文書順の最後 = c7） -->
 <div class="sticky" id="stickyBar" data-blk="fixed" data-blk-name="追従CTAバー（SPのみ）">
   <div class="sticky__in">
-    <a class="btn" data-act="join" data-cta-copy="ベイカレントの1day選考会に応募する" data-attitude="ベイカレントの休日1day選考会に応募したい_bc01_v08a_c7_fixed" href="https://form.my-vision.co.jp/forms/d0aa9cac-b2de-480f-a8fc-07f96641a156?attitude=%E3%83%99%E3%82%A4%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%88%E3%81%AE%E4%BC%91%E6%97%A51day%E9%81%B8%E8%80%83%E4%BC%9A%E3%81%AB%E5%BF%9C%E5%8B%9F%E3%81%97%E3%81%9F%E3%81%84_bc01_v08a_c7_fixed">ベイカレントの1day選考会に応募する</a>
-    <p class="sticky__note" data-t="fixed-01">MyVision限定の休日日程／登録所要1分・完全無料</p>
+    <a class="btn" data-act="join" data-cta-copy="ベイカレントの1day選考会に応募する" data-attitude="ベイカレントの休日1day選考会に応募したい_bc01_v10a_c7_fixed" href="https://form.my-vision.co.jp/forms/d0aa9cac-b2de-480f-a8fc-07f96641a156?attitude=%E3%83%99%E3%82%A4%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%88%E3%81%AE%E4%BC%91%E6%97%A51day%E9%81%B8%E8%80%83%E4%BC%9A%E3%81%AB%E5%BF%9C%E5%8B%9F%E3%81%97%E3%81%9F%E3%81%84_bc01_v10a_c7_fixed"><span class="btn__top">完全無料・1分で登録完了</span>ベイカレントの1day選考会に応募する</a>
+    <p class="sticky__note" data-t="fixed-01">MyVisionコンサルティングの登録フォームへ移動します</p>
   </div>
 </div>
 
@@ -822,18 +836,38 @@ details[open] summary::after{transform:rotate(-135deg)}
     });
   }, 1200);
 
-  /* 追従CTA：リード通過後に出す。最終CTAが見えたら引っ込める */
+  /* 追従CTA：リード直下のCTAを通り過ぎたら出す。最終CTAが見えたら引っ込める。
+     セクションの並べ替えに影響されないよう、特定のセクションidには依存させない。 */
   var bar = document.getElementById('stickyBar');
   var entry = document.getElementById('entry');
-  var trigger = document.getElementById('hook');
-  var pastLead = false, atEntry = false;
+  var lead = document.querySelector('[data-blk="lead"]');
+  var pastLead = false, atEntry = false, ticking = false;
+
   function sync(){ bar.classList.toggle('is-on', pastLead && !atEntry); }
 
-  if('IntersectionObserver' in window){
-    new IntersectionObserver(function(es){
-      pastLead = es[0].boundingClientRect.top < 0 || es[0].isIntersecting; sync();
-    },{threshold:0}).observe(trigger);
+  function threshold(){
+    if(!lead) return 400;
+    var r = lead.getBoundingClientRect();
+    return r.bottom + (window.scrollY || document.documentElement.scrollTop) - 120;
+  }
+  var limit = threshold();
 
+  function check(){
+    ticking = false;
+    var y = window.scrollY || document.documentElement.scrollTop;
+    var next = y > limit;
+    if(next !== pastLead){ pastLead = next; sync(); }
+  }
+  function onScroll(){ if(!ticking){ ticking = true; requestAnimationFrame(check); } }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', function(){
+    pastLead = false; limit = threshold(); check();
+  }, { passive: true });
+  window.addEventListener('load', function(){ limit = threshold(); check(); });
+  check();
+
+  if('IntersectionObserver' in window){
     new IntersectionObserver(function(es){
       atEntry = es[0].isIntersecting; sync();
     },{threshold:.12}).observe(entry);
